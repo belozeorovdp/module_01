@@ -13,13 +13,19 @@ public class Main
 
         int k = 1;
         int j;
-        for (int i = 0; i < array.length - 1; i++)
+        for (int i = 0; i < (array.length - 1); i++)
         {
             for (j = i + 1; j < array.length; j++)
             {
-                if (array[i] == array[j]) break;
+                if (array[i] == array[j])
+                {
+                    break;
+                }
             }
-            if (j == array.length) k++;
+            if (j == array.length)
+            {
+                k++;
+            }
         }
         System.out.println(Arrays.toString(array));
         System.out.println("k = " + k);
